@@ -13,7 +13,7 @@ const Header = () => {
       </div>
 
       <nav>
-        <ul className="header__list d-flex m-0">
+        <ul className="header__list d-flex m-0 p-0">
           <li>
             <Link className="item" to="/">
               Our coffee
