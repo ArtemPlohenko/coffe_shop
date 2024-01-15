@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.header {
+  min-width: 100%;
+  padding: 30px 144px;
+}
+
+.header__list {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.item {
+  padding-left: 40px;
+  color: $white;
+  text-decoration: none;
+}
