@@ -16,12 +16,12 @@ const Footer = () => {
         <nav>
           <ul className="footer__list d-flex m-0 p-0">
             <li>
-              <Link className="footer__item" to="/">
+              <Link className="footer__item" to="/About">
                 Our coffee
               </Link>
             </li>
             <li>
-              <Link className="footer__item" to="/About">
+              <Link className="footer__item" to="/Products">
                 For your pleasure
               </Link>
             </li>

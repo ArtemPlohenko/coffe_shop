@@ -1,5 +1,7 @@
 import Image from "react-bootstrap/Image";
 
+import "./AboutImages.scss";
+
 const AboutImages = ({ image }) => {
   const Images = {
     aboutUs: { src: "images/our-1.png", id: "image1" },
@@ -13,13 +15,13 @@ const AboutImages = ({ image }) => {
   }
 
   return (
-    <div>
+    <>
       {selectedImage && (
-        <div key={selectedImage.id}>
+        <div className="section-image" key={selectedImage.id}>
           <Image src={selectedImage.src} fluid />
         </div>
       )}
-    </div>
+    </>
   );
 };
 

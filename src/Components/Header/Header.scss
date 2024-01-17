@@ -12,6 +12,7 @@
 .header {
   min-width: 100%;
   padding: 30px 144px;
+  z-index: 2;
 
   @media (max-width: 1200px) {
     padding: 30px;

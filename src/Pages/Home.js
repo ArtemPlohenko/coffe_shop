@@ -5,8 +5,8 @@ import OurBest from "../Components/OurBest/OurBest";
 const Home = () => {
   return (
     <>
-      <Banner imageUrl="./images/banner/banner.jpg" />
-      <AboutSection page="aboutUs" />
+      <Banner imageUrl="./images/banner/banner.jpg" mainTitle="YouLove" />
+      <AboutSection title="aboutUs" />
       <OurBest />
     </>
   );
