@@ -5,16 +5,14 @@ import AboutTitle from "../AboutTitle/AboutTitle";
 
 import "./AboutSection.scss";
 
-const AboutSection = ({ showImages, showTitles }) => {
+const AboutSection = ({ title, image }) => {
   return (
     <section>
       <div className="info text-center mx-auto">
-        {/* <h2 className="title-2">About Us</h2> */}
-        <AboutTitle showTitles={showTitles} />
+        <AboutTitle title={title} />
         <Image src="./images/beans_logo.png" fluid />
         <div className="info__content">
-          <AboutImages showImages={showImages} />
-
+          <AboutImages image={image} />
           <div className="">
             <p>
               Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly
