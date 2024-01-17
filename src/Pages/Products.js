@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <>
       <Banner imageUrl="./images/banner/coffee-shop-2.jpg" mainTitle="ForYourPleasure" />
-      <AboutSection image="aboutOurBeans" title="aboutOurGoods" />
+      <AboutSection className="text-center" image="aboutOurBeans" title="aboutOurGoods" text="products" />
     </>
   );
 };

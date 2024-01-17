@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Banner imageUrl="./images/banner/coffee-shop.jpg" mainTitle="OurCoffee" />
-      <AboutSection image="aboutUs" title="aboutOurBeans" />
+      <AboutSection image="aboutUs" title="aboutOurBeans" text="about" />
     </>
   );
 };
