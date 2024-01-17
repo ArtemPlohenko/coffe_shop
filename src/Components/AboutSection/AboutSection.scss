@@ -3,6 +3,13 @@
 section {
   padding: 80px 0;
   font-size: 14px;
+
+  @media (max-width: 1200px) {
+    padding: 50px 30px;
+  }
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
 }
 
 .info {

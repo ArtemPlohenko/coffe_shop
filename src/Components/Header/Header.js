@@ -5,7 +5,7 @@ import "./Header.scss";
 
 const Header = () => {
   return (
-    <div className="header container d-flex position-absolute align-items-end">
+    <div className="header d-flex position-absolute align-items-end flex-wrap">
       <div className="logo">
         <Link to="/">
           <Image src="./images/svg/logo.svg" fluid />

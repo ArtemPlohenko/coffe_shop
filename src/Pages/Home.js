@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Banner imageUrl="./images/banner/banner.jpg" />
-      <AboutSection />
+      <AboutSection showImages={false} showTitles={true} />
       <OurBest />
     </>
   );

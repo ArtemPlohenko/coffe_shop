@@ -1,13 +1,36 @@
-//
+.our-best {
+  position: relative;
+  padding: 80px 0 110px;
+
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
 
 .our-best__card {
   padding: 22px;
   width: 220px;
-  height: 240px;
   border-radius: 8px;
+  border: 0;
   background: rgba(255, 255, 255, 0.65);
   font-size: 14px;
   white-space: nowrap;
+
+  .card {
+    background: transparent;
+    border: 0;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 14px;
+  }
 }
 
 .small {

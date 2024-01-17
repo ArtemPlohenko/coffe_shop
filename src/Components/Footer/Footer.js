@@ -5,8 +5,8 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="container ">
-      <div className="footer__container d-flex justify-content-center align-items-end">
+    <footer className=" ">
+      <div className="footer__container d-flex justify-content-sm-center align-items-end flex-wrap">
         <div className="footer__logo ">
           <Link to="/">
             <Image src="./images/logo-footer.png" fluid />

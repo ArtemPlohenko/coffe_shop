@@ -1,8 +1,21 @@
 @import "../../variables.scss";
 
+.logo {
+  min-width: 112px;
+  margin-bottom: 0;
+
+  @media (max-width: 418px) {
+    margin-bottom: 25px;
+  }
+}
+
 .header {
   min-width: 100%;
   padding: 30px 144px;
+
+  @media (max-width: 1200px) {
+    padding: 30px;
+  }
 }
 
 .header__list {
@@ -14,4 +27,9 @@
   padding-left: 40px;
   color: $white;
   text-decoration: none;
+
+  @media (max-width: 418px) {
+    padding-left: 0;
+    padding-right: 40px;
+  }
 }
