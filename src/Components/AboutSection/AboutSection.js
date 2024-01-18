@@ -9,7 +9,7 @@ import AboutText from "../AboutText/AboutText";
 
 import "./AboutSection.scss";
 
-const AboutSection = ({ title, image, text, isHome, children }) => {
+const AboutSection = ({ title, image, text, isHome }) => {
   const className = "info-home text-center mx-auto";
   const secondClass = "info";
 
