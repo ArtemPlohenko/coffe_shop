@@ -1,5 +1,6 @@
 import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 import "./OurBest.scss";
 
@@ -12,7 +13,7 @@ const OurBest = () => {
 
   const buttons = CardIds.map(({ src, label, price }) => {
     return (
-      <button className="our-best__card d-flex flex-column align-items-end justify-content-end" key={src}>
+      <Link to="/Beans" className="our-best__card d-flex flex-column align-items-end justify-content-end" key={src}>
         <Card>
           <Card.Img variant="top" src={src} />
           <Card.Body className="d-flex flex-column align-items-end justify-content-end p-0">
@@ -20,7 +21,7 @@ const OurBest = () => {
             <Card.Text className="small justify-content-end">{price}</Card.Text>
           </Card.Body>
         </Card>
-      </button>
+      </Link>
     );
   });
 
@@ -29,9 +30,7 @@ const OurBest = () => {
       <Image className="position-absolute" src="./images/banner/paper.jpg" fluid />
       <div className="d-flex flex-column align-items-center justify-content-center">
         <h2 className="title-2">Our best</h2>
-        <div className="d-flex justify-content-center justify-content-md-start flex-wrap flex-md-nowrap gap-5 px-4 px-md-0">
-          {buttons}
-        </div>
+        <div className="d-flex justify-content-center flex-wrap flex-md-nowrap gap-5 px-4 px-md-0">{buttons}</div>
       </div>
     </div>
   );

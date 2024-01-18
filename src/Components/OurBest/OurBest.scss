@@ -14,6 +14,7 @@
 }
 
 .our-best__card {
+  text-decoration: none;
   padding: 22px;
   width: 220px;
   border-radius: 8px;
@@ -21,6 +22,12 @@
   background: rgba(255, 255, 255, 0.65);
   font-size: 14px;
   white-space: nowrap;
+  transition: filter 0.4s;
+
+  &:hover {
+    text-decoration: none;
+    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.25));
+  }
 
   .card {
     background: transparent;

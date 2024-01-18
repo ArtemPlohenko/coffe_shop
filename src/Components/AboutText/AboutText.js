@@ -1,7 +1,7 @@
 import "./AboutText.scss";
 
-const AboutText = ({ text }) => {
-  const test1 = [
+const AboutText = ({ text, additionalClass }) => {
+  const text1 = [
     <p>
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do
       things on at. Situation recommend objection do intention so questions. As greatly removed calling pleased improve
@@ -16,7 +16,7 @@ const AboutText = ({ text }) => {
     </p>,
   ];
 
-  const test2 = [
+  const text2 = [
     <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.</p>,
     <p>
       Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly
@@ -25,19 +25,34 @@ const AboutText = ({ text }) => {
     </p>,
   ];
 
-  const test3 = [
+  const text3 = [
     <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.</p>,
     <p>
       Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly
       removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect
       answered followed. At it went is song that held help face.
+    </p>,
+  ];
+
+  const text4 = [
+    <p>
+      <strong>Country: </strong> Brasil
+    </p>,
+    <p>
+      <strong>Description: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat.
+    </p>,
+    <p>
+      Price: <span>16.99$</span>
     </p>,
   ];
 
   const Texts = {
-    home: { label: test1, id: "text1" },
-    about: { label: test2, id: "text2" },
-    products: { label: test3, id: "text3" },
+    home: { label: text1, id: "text1" },
+    about: { label: text2, id: "text2" },
+    products: { label: text3, id: "text3" },
+    beans: { label: text4, id: "text4" },
   };
 
   const selectedTexts = Texts[text];
@@ -47,7 +62,7 @@ const AboutText = ({ text }) => {
   }
 
   return (
-    <div key={selectedTexts.id}>
+    <div className={`${additionalClass}`} key={selectedTexts.id}>
       <>{selectedTexts.label}</>
     </div>
   );

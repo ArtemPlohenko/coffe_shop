@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.our-best__products {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 865px;
+  padding: 40px 0;
+
+  .our-best__card {
+    border-radius: 8px;
+    background: $white;
+    text-decoration: none;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+
+    &:hover {
+      text-decoration: none;
+      filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.25));
+    }
+  }
+}

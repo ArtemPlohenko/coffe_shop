@@ -1,13 +1,13 @@
 import Banner from "../Components/Banner/Banner";
 import AboutSection from "../Components/AboutSection/AboutSection";
 
-const About = () => {
+const Beans = () => {
   return (
     <>
       <Banner imageUrl="./images/banner/coffee-shop.jpg" mainTitle="OurCoffee" />
-      <AboutSection image="aboutUs" title="aboutOurBeans" text="about" isHome={false} />
+      <AboutSection image="aboutOurCoffee" title="aboutIt" text="beans" isHome={false} />
     </>
   );
 };
 
-export default About;
+export default Beans;

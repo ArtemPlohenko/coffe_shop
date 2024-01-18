@@ -12,9 +12,14 @@ section {
   }
 }
 
-.info {
+.info-home {
   max-width: 590px;
+}
+
+.info {
+  max-width: 865px;
   position: relative;
+  margin: 0 auto;
   &::before {
     position: absolute;
     content: "";
@@ -30,4 +35,11 @@ section {
 
 .info__content {
   padding-top: 40px;
+}
+
+.beans {
+  margin-top: 25px;
+  span {
+    font-size: 24px;
+  }
 }

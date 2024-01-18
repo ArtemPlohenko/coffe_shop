@@ -3,6 +3,7 @@ const AboutTitle = ({ title }) => {
     aboutUs: { label: "About Us", id: "label1" },
     aboutOurBeans: { label: "About our beans", id: "label2" },
     aboutOurGoods: { label: "About our goods", id: "label3" },
+    aboutIt: { label: "About it", id: "label4" },
   };
 
   const selectedTitle = Titles[title];
