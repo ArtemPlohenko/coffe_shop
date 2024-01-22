@@ -15,6 +15,11 @@
   }
 }
 
+.small {
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .custom-class {
   padding: 80px 0 110px;
   .our-best__card {
@@ -35,26 +40,26 @@
   // padding: 40px 0;
   padding: 15px 0;
 
-  .our-best__card {
-    text-decoration: none;
-    padding: 22px;
-    width: 220px;
-    border-radius: 8px;
-    border: 0;
-    font-size: 14px;
-    white-space: nowrap;
-    transition: filter 0.4s;
-    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
-
-    &:hover {
-      text-decoration: none;
-      filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.25));
-    }
-  }
-
   img {
     width: 100%;
     margin-bottom: 14px;
+  }
+}
+
+.our-best__card {
+  text-decoration: none;
+  padding: 22px;
+  width: 220px;
+  border-radius: 8px;
+  border: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: filter 0.4s;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+
+  &:hover {
+    text-decoration: none;
+    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.25));
   }
 }
 
