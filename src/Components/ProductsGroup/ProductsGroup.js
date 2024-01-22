@@ -10,7 +10,7 @@ const ProductsGroup = ({ numberOfCards, imageShow, titleShow, additionalClass })
     { id: 2, src: "./images/best-2.png", label: "Presto Coffee Beans 1 kg", countryProducer: "", price: "15.99$" },
     { id: 3, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "", price: "6.99$" },
     //
-    { id: 4, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "Brazil", price: "6.99$" },
+    { id: 4, src: "./images/our-2.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "Brazil", price: "16.99$" },
     { id: 5, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "Kenya", price: "6.99$" },
     { id: 6, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "Columbia", price: "6.99$" },
     { id: 7, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "Brazil", price: "6.99$" },
