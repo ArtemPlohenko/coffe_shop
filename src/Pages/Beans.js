@@ -3,15 +3,14 @@ import { useParams } from "react-router-dom";
 import Banner from "../Components/Banner/Banner";
 import AboutSection from "../Components/AboutSection/AboutSection";
 
-const Beans = () => {
-  // console.log(props);
+const Beans = (props) => {
   const { id } = useParams();
+  console.log(props);
 
   return (
     <>
-      <Banner imageUrl="./images/banner/coffee-shop.jpg" mainTitle="OurCoffee" />
-      <AboutSection image="aboutOurCoffee" title="aboutIt" text="beans" isHome={false} id={id} />
-      <p>Displaying details for Bean with ID: {id}</p>
+      <Banner imageUrl="/images/banner/coffee-shop.jpg" mainTitle="OurCoffee" />
+      <AboutSection image={id} title="aboutIt" text="beans" isHome={false} id={id} />
     </>
   );
 };

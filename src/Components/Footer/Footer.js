@@ -5,11 +5,11 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className=" ">
+    <footer>
       <div className="footer__container d-flex justify-content-sm-center align-items-end flex-wrap">
         <div className="footer__logo ">
           <Link to="/">
-            <Image src="./images/logo-footer.png" fluid />
+            <Image src="/images/logo-footer.png" fluid />
           </Link>
         </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className="footer__img d-flex justify-content-center">
-        <Image src="./images/beans_logo.png" fluid />
+        <Image src="/images/beans_logo.png" fluid />
       </div>
     </footer>
   );

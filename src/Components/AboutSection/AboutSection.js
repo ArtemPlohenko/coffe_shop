@@ -15,16 +15,13 @@ const AboutSection = ({ title, image, text, isHome, id }) => {
 
   const additionalClass = text === "beans" ? "beans text-start" : "";
 
-  // Dynamically select the image based on the id parameter
-  const dynamicImage = id ? `image${id}` : image;
-
   return (
     <section>
       <>
         {isHome ? (
           <div className={`${className} ${additionalClass}`}>
             <AboutTitle title={title} />
-            <Image src="./images/beans_logo.png" fluid />
+            <Image src="/images/beans_logo.png" fluid />
             <div className={`info__content d-flex ${additionalClass}`}>
               <AboutImages image={image} />
               <AboutText text={text} additionalClass={additionalClass} />
@@ -40,7 +37,7 @@ const AboutSection = ({ title, image, text, isHome, id }) => {
                 <Col>
                   <div className="text-center">
                     <AboutTitle title={title} />
-                    <Image src="./images/beans_logo.png" fluid />
+                    <Image src="/images/beans_logo.png" fluid />
                     <div className={`about-text-container ${additionalClass}`}>
                       <AboutText text={text} additionalClass={additionalClass} />
                     </div>

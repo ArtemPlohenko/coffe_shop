@@ -8,7 +8,7 @@ const Header = () => {
     <div className="header d-flex position-absolute align-items-end flex-wrap">
       <div className="logo">
         <Link to="/">
-          <Image src="./images/svg/logo.svg" fluid />
+          <Image src="/images/svg/logo.svg" fluid />
         </Link>
       </div>
 
