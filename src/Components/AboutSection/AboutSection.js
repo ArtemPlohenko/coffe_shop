@@ -9,11 +9,13 @@ import AboutText from "../AboutText/AboutText";
 
 import "./AboutSection.scss";
 
-const AboutSection = ({ title, image, text, isHome, id }) => {
+const AboutSection = ({ title, image, text, isHome, id, price }) => {
   const className = "info-home text-center mx-auto";
   const secondClass = "info";
 
   const additionalClass = text === "beans" ? "beans text-start" : "";
+
+  console.log(price);
 
   return (
     <section>
@@ -39,7 +41,7 @@ const AboutSection = ({ title, image, text, isHome, id }) => {
                     <AboutTitle title={title} />
                     <Image src="/images/beans_logo.png" fluid />
                     <div className={`about-text-container ${additionalClass}`}>
-                      <AboutText text={text} additionalClass={additionalClass} />
+                      <AboutText text={text} additionalClass={additionalClass} price={price} />
                     </div>
                   </div>
                 </Col>

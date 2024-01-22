@@ -1,6 +1,6 @@
 import "./AboutText.scss";
 
-const AboutText = ({ text, additionalClass }) => {
+const AboutText = ({ text, additionalClass, price }) => {
   const text1 = [
     <p key="paragraph1">
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do
@@ -170,24 +170,24 @@ const AboutText = ({ text, additionalClass }) => {
       nisi ut aliquip ex ea commodo consequat.
     </p>,
     <p key="paragraph3">
-      Price: <span>13.99$</span>
+      Price: <span>{price}</span>
     </p>,
   ];
 
   const Texts = {
-    home: { label: text1, id: "text1" },
-    about: { label: text2, id: "text2" },
-    products: { label: text3, id: "text3" },
-    beans: { label: text4, id: "text4" },
-    beans5: { label: text5, id: "text5" },
-    beans6: { label: text6, id: "text6" },
-    beans7: { label: text7, id: "text7" },
-    beans8: { label: text8, id: "text8" },
-    beans9: { label: text9, id: "text9" },
-    beans10: { label: text10, id: "text10" },
-    beans11: { label: text11, id: "text11" },
-    beans12: { label: text12, id: "text12" },
-    beans13: { label: text13, id: "text13" },
+    home: { label: text1, id: "text1", price: price },
+    about: { label: text2, id: "text2", price: price },
+    products: { label: text3, id: "text3", price: price },
+    beans: { label: text4, id: "text4", price: price },
+    beans5: { label: text5, id: "text5", price: price },
+    beans6: { label: text6, id: "text6", price: price },
+    beans7: { label: text7, id: "text7", price: price },
+    beans8: { label: text8, id: "text8", price: price },
+    beans9: { label: text9, id: "text9", price: price },
+    beans10: { label: text10, id: "text10", price: price },
+    beans11: { label: text11, id: "text11", price: price },
+    beans12: { label: text12, id: "text12", price: price },
+    beans13: { label: text13, id: "text13", price: price },
   };
 
   const selectedTexts = Texts[text];
