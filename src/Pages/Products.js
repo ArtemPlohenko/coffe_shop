@@ -13,7 +13,7 @@ const Products = () => {
         text="products"
         isHome={false}
       />
-      <ProductsGroup />
+      <ProductsGroup numberOfCards={6} additionalClass="second-prodects" />
     </>
   );
 };
