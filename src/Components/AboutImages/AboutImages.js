@@ -1,5 +1,7 @@
-import Image from "react-bootstrap/Image";
+// AboutImages.jsx
 
+import React from "react";
+import Image from "react-bootstrap/Image";
 import "./AboutImages.scss";
 
 const AboutImages = ({ image }) => {
@@ -9,20 +11,17 @@ const AboutImages = ({ image }) => {
     aboutOurBeans: { src: "/images/for-your.png", id: "image3" },
   };
 
-  const selectedImage = Images[image];
+  // Динамічний вибір зображення на основі переданого prop
+  const selectedImage = image ? Images[image] : null;
 
-  if (!(image && selectedImage)) {
+  if (!selectedImage) {
     return null;
   }
 
   return (
-    <>
-      {selectedImage && (
-        <div className="section-image" key={selectedImage.id}>
-          <Image src={selectedImage.src} fluid />
-        </div>
-      )}
-    </>
+    <div className="section-image" key={selectedImage.id}>
+      <Image src={selectedImage.src} fluid />
+    </div>
   );
 };
 

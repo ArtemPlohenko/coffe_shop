@@ -9,11 +9,14 @@ import AboutText from "../AboutText/AboutText";
 
 import "./AboutSection.scss";
 
-const AboutSection = ({ title, image, text, isHome }) => {
+const AboutSection = ({ title, image, text, isHome, id }) => {
   const className = "info-home text-center mx-auto";
   const secondClass = "info";
 
   const additionalClass = text === "beans" ? "beans text-start" : "";
+
+  // Dynamically select the image based on the id parameter
+  const dynamicImage = id ? `image${id}` : image;
 
   return (
     <section>

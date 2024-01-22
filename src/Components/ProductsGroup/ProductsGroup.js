@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 
 import "./ProductsGroup.scss";
 
-const ProductsGroup = ({ numberOfCards, imageShow, titleShow, additionalClass }) => {
+const ProductsGroup = ({ numberOfCards, titleShow, additionalClass }) => {
   const CardIds = [
     { id: 1, src: "./images/bwst-1.png", label: "Solimo Coffee Beans 2 kg", countryProducer: "", price: "10.73$" },
     { id: 2, src: "./images/best-2.png", label: "Presto Coffee Beans 1 kg", countryProducer: "", price: "15.99$" },
@@ -25,7 +25,7 @@ const ProductsGroup = ({ numberOfCards, imageShow, titleShow, additionalClass })
   const buttons = selectedCards.map(({ id, src, label, countryProducer, price }) => {
     return (
       <Link
-        to={`/product/${id}`}
+        to={`/Beans/${id}`}
         className="our-best__card d-flex flex-column align-items-end justify-content-end"
         key={id}
       >
@@ -49,7 +49,7 @@ const ProductsGroup = ({ numberOfCards, imageShow, titleShow, additionalClass })
 
   return (
     <div className={classNames}>
-      {imageShow && <Image imageShow={imageShow} className="position-absolute" src="./images/banner/paper.jpg" fluid />}
+      <Image className="position-absolute" src="./images/banner/paper.jpg" fluid />
       <div className="d-flex flex-column align-items-center justify-content-center">
         {titleShow && <h2 className="title-2">Our best</h2>}
         <div className="our-best__products d-flex justify-content-center flex-wrap gap-5 px-4 px-md-0">{buttons}</div>

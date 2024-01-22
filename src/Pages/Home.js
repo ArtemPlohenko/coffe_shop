@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Banner imageUrl="./images/banner/banner.jpg" mainTitle="YouLove" />
       <AboutSection title="aboutUs" text="home" isHome={true} />
-      <ProductsGroup imageShow={true} titleShow={true} numberOfCards={3} additionalClass="custom-class" />
+      <ProductsGroup titleShow={true} numberOfCards={3} additionalClass="custom-class" />
     </>
   );
 };
