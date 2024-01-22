@@ -1,6 +1,3 @@
-// AboutImages.jsx
-
-import React from "react";
 import Image from "react-bootstrap/Image";
 import "./AboutImages.scss";
 
@@ -14,14 +11,18 @@ const AboutImages = ({ image }) => {
   // Динамічний вибір зображення на основі переданого prop
   const selectedImage = image ? Images[image] : null;
 
-  if (!selectedImage) {
+  if (!(image && selectedImage)) {
     return null;
   }
 
   return (
-    <div className="section-image" key={selectedImage.id}>
-      <Image src={selectedImage.src} fluid />
-    </div>
+    <>
+      {selectedImage && (
+        <div className="section-image" key={selectedImage.id}>
+          <Image src={selectedImage.src} fluid />
+        </div>
+      )}
+    </>
   );
 };
 
