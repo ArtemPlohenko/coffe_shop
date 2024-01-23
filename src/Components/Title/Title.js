@@ -15,7 +15,7 @@ const Titles = ({ mainTitle }) => {
 
   return (
     <div className="title position-absolute" data-toggle="title-show" key={selectedTitle.id}>
-      <h1>{selectedTitle.label}</h1>
+      <h1 className="text-center">{selectedTitle.label}</h1>
     </div>
   );
 };
