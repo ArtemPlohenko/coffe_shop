@@ -12,8 +12,6 @@ const AboutSection = ({ title, image, text, isHome, price }) => {
 
   const additionalClass = text === "beans" ? "beans text-start" : "";
 
-  console.log(price);
-
   return (
     <section>
       <>

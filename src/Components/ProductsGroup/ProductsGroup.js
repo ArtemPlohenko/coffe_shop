@@ -30,8 +30,7 @@ const ProductsGroup = ({ numberOfCards, titleShow, additionalClass }) => {
     { id: 9, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "Brazil", price: "6.99$" },
   ];
 
-  // Вибрати лише останні 6 елементів з CardIds для компонента Products
-  // або перші 3 елементи для компонента Home
+  // Вибрати лише останні 6 елементів з CardIds для компонента Products або перші 3 елементи для компонента Home
   const selectedCards = numberOfCards === 6 ? CardIds.slice(-6) : CardIds.slice(0, 3);
 
   const buttons = selectedCards.map(({ id, src, label, countryProducer, price }) => (
