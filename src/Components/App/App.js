@@ -10,20 +10,26 @@ import Footer from "../Footer/Footer";
 import "./App.scss";
 
 const App = () => {
+  const routes = [
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> },
+    { path: "/products", element: <Products /> },
+    { path: "/beans/:id", element: <Beans /> },
+  ];
+
   return (
     <>
-      <Header />
+      <Header navigationRoutes={routes.slice(1, 3)} />
 
       <div className="wrapper">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="products" element={<Products />} />
-          <Route path="beans/:id" element={<Beans />} />
+          {routes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
         </Routes>
       </div>
 
-      <Footer />
+      <Footer navigationRoutes={routes.slice(1, 3)} />
     </>
   );
 };

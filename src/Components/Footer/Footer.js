@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = ({ navigationRoutes }) => {
   return (
     <footer>
       <div className="footer__container d-flex justify-content-sm-center align-items-end flex-wrap">
