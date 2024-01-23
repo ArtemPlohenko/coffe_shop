@@ -1,6 +1,5 @@
-import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import Image from "react-bootstrap/Image";
+import { Image, Card } from "react-bootstrap";
 
 import "./ProductsGroup.scss";
 
