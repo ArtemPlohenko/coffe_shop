@@ -1,11 +1,16 @@
 import Banner from "../Components/Banner/Banner";
-import AboutSection from "../Components/AboutSection/AboutSection";
+import Section from "../Components/Sections/Section";
+
+const AboutPageProps = {
+  bannerAbout: { imageUrl: "/images/banner/coffee-shop.jpg", mainTitle: "OurCoffee" },
+  section: { image: "About", title: "aboutOurBeans", text: "about" },
+};
 
 const About = () => {
   return (
     <>
-      <Banner imageUrl="./images/banner/coffee-shop.jpg" mainTitle="OurCoffee" />
-      <AboutSection image="aboutUs" title="aboutOurBeans" text="about" isHome={false} />
+      <Banner {...AboutPageProps.bannerAbout} />
+      <Section {...AboutPageProps.section} />
     </>
   );
 };

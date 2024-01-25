@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 import Banner from "../Components/Banner/Banner";
-import AboutSection from "../Components/AboutSection/AboutSection";
+import Section from "../Components/Sections/Section";
 
 const Beans = ({ price }) => {
   const { id } = useParams();
@@ -11,7 +11,7 @@ const Beans = ({ price }) => {
   return (
     <>
       <Banner imageUrl="/images/banner/coffee-shop.jpg" mainTitle="OurCoffee" />
-      <AboutSection image={id} title="aboutIt" text="beans" isHome={false} id={id} price={price} />
+      <Section image="AboutProducts" title="aboutIt" text="beans" id={id} price={price} />
     </>
   );
 };

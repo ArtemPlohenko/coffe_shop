@@ -1,5 +1,5 @@
 import Image from "react-bootstrap/Image";
-import Titles from "../../Components/Title/Title";
+import Titles from "../Title/Title";
 
 import "./Banner.scss";
 

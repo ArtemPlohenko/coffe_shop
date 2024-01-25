@@ -2,7 +2,7 @@ import "./Title.scss";
 
 const Titles = ({ mainTitle }) => {
   const Titles = {
-    YouLove: { label: "Everything You Love About Coffee", id: "title-1" },
+    Home: { label: "Everything You Love About Coffee", id: "title-1" },
     OurCoffee: { label: "Our Coffee", id: "title-2" },
     ForYourPleasure: { label: "For your pleasure", id: "title-3" },
   };
@@ -14,7 +14,7 @@ const Titles = ({ mainTitle }) => {
   }
 
   return (
-    <div className="title position-absolute" data-toggle="title-show" key={selectedTitle.id}>
+    <div className="title position-absolute" key={selectedTitle.id}>
       <h1 className="text-center">{selectedTitle.label}</h1>
     </div>
   );

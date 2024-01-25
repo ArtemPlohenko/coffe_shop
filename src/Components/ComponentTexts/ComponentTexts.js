@@ -1,6 +1,6 @@
-import "./AboutText.scss";
+//
 
-const AboutText = ({ text, additionalClass, price }) => {
+const ComponentTexts = ({ text, additionalClass, price }) => {
   const text1 = [
     <p key="paragraph1">
       Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do
@@ -203,4 +203,4 @@ const AboutText = ({ text, additionalClass, price }) => {
   );
 };
 
-export default AboutText;
+export default ComponentTexts;
