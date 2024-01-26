@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 //   section: { className: "text-center", image: "Products", title: "aboutOurGoods", text: "products" },
 //   productsGroup: {
 //     products: [
-//       { id: 1, src: "/images/our-2.png" },
-//       { id: 2, src: "/images/best-3.png" },
-//       { id: 3, src: "/images/best-3.png" },
-//       { id: 4, src: "/images/best-3.png" },
-//       { id: 5, src: "/images/best-3.png" },
-//       { id: 6, src: "/images/best-3.png" },
+//       { id: 1, src: "/images/our-2.png", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "1.99$" },
+//       { id: 2, src: "/images/best-3.png", title: "AROMISTICO Coffee 1 kg", country: "Kenya", price: "2.99$" },
+//       { id: 3, src: "/images/best-3.png", title: "AROMISTICO Coffee 1 kg", country: "Columbia", price: "3.99$" },
+//       { id: 4, src: "/images/best-3.png", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "4.99$" },
+//       { id: 5, src: "/images/best-3.png", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "5.99$" },
+//       { id: 6, src: "/images/best-3.png", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "6.99$" },
 //     ],
 //     additionalClass: "second-prodects",
 //   },
@@ -23,7 +23,7 @@ const Products = () => {
   const [productsPageProps, setProductsPageProps] = useState({});
 
   useEffect(() => {
-    fetch("https://486fe35abc97409c8cfff47ab7430e6f.api.mockbin.io/")
+    fetch("https://f53e40021f214a38b8a8740aed4c542a.api.mockbin.io/")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");

@@ -10,9 +10,9 @@ import { useEffect, useState } from "react";
 //     title: "title",
 //     additionalClass: "custom-class",
 //     products: [
-//       { id: 1, src: "/images/best-1.png" },
-//       { id: 2, src: "/images/best-2.png" },
-//       { id: 3, src: "/images/best-3.png" },
+//       { id: 1, src: "/images/best-1.png", title: "Solimo Coffee Beans 2 kg", price: "10.73$" },
+//       { id: 2, src: "/images/best-2.png", title: "Presto Coffee Beans 1 kg", price: "15.99$" },
+//       { id: 3, src: "/images/best-3.png", title: "AROMISTICO Coffee 1 kg", price: "6.99$" },
 //     ],
 //   }
 // }
@@ -21,7 +21,7 @@ const Home = () => {
   const [homePageProps, setHomePageProps] = useState({});
 
   useEffect(() => {
-    fetch("https://44dc9e6ee70244fa83ffb9c2954bf319.api.mockbin.io/")
+    fetch("https://fce4348dffef4799b0c7f57dc12b60b0.api.mockbin.io/")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
