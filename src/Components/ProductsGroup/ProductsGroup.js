@@ -19,7 +19,6 @@ const ProductsGroup = ({ title, additionalClass, products }) => {
         {title && <SubTitle title="OurBest" />}
         <div className="our-best__products d-flex justify-content-center flex-wrap gap-5 px-4 px-md-0">
           {products && products.map((props) => <ProductCard key={props.id} {...props} />)}
-          {/* <ProductCard id={1} image="/images/best-2.png" /> */}
         </div>
       </div>
     </div>

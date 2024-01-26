@@ -12,7 +12,7 @@ import "./App.scss";
 
 const App = () => {
   // const CardIds = [
-  //   // { id: 1, src: "./images/bwst-1.png", label: "Solimo Coffee Beans 2 kg", countryProducer: "", price: "10.73$" },
+  //   // { id: 1, src: "./images/best-1.png", label: "Solimo Coffee Beans 2 kg", countryProducer: "", price: "10.73$" },
   //   // { id: 2, src: "./images/best-2.png", label: "Presto Coffee Beans 1 kg", countryProducer: "", price: "15.99$" },
   //   // { id: 3, src: "./images/best-3.png", label: "AROMISTICO Coffee 1 kg", countryProducer: "", price: "6.99$" },
   //   //

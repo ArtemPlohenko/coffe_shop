@@ -4,7 +4,7 @@ import "./Images.scss";
 
 const Images = ({ image }) => {
   const ImagesObj = {
-    Best1: { src: "/images/bwst-1.png", id: "image1" },
+    Best1: { src: "/images/best-1.png", id: "image1" },
     Best2: { src: "/images/best-2.png", id: "image2" },
     Best3: { src: "/images/best-3.png", id: "image3" },
     Best4: { src: "/images/our-2.png", id: "image4" },
