@@ -9,7 +9,7 @@ const ProductCard = ({ id, src, title, country, price }) => {
         <Card.Body className="d-flex flex-column align-items-end justify-content-end p-0">
           <Card.Text>{title}</Card.Text>
           <Card.Text className="country justify-content-end">{country}</Card.Text>
-          <Card.Text className="small justify-content-end ">{price}</Card.Text>
+          <Card.Text className="small justify-content-end">{price}</Card.Text>
         </Card.Body>
       </Card>
     </Link>
