@@ -18,8 +18,19 @@ section {
   }
 }
 
-.content {
+.section-wrap {
+  max-width: 590px;
+  margin: 0 auto;
   position: relative;
+}
+
+.about-text-container {
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 865px;
+
   .text-center {
     max-width: 418px;
     margin: 0 auto;
@@ -46,9 +57,4 @@ section {
   span {
     font-size: 24px;
   }
-}
-
-.section-wrap {
-  max-width: 865px;
-  margin: 0 auto;
 }
